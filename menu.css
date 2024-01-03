@@ -1,3 +1,4 @@
+/* Variables for color palette*/
 :root {
     --backgroundColor: #222;
     --firstColor: #343a40;
@@ -5,12 +6,23 @@
     --tdHoverColor: #787878;
     --theadColor: #800;
 }
+
+/* Style whole nav bar*/
+#navbar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: var(--firstColor);
+    border-bottom: solid 1px lightgray;
+    padding: 2px 8px;
+}
+
 /* Dropdown Button */
 .dropbtn {
     background-color: inherit;
     color: white;
-    padding: 10px;
-    font-size: 0.9em;
+    padding: 4px 8px;
+    font-size: 1.05em;
     border: 1px transparent solid;
     border-radius: 10px;
 }
@@ -26,9 +38,7 @@
     display: none;
     position: absolute;
     background-color: var(--firstColor);
-    min-width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border: 1px transparent solid;
     border-radius: 10px;
     z-index: 1;
 }
@@ -39,6 +49,8 @@
     padding: 5px;
     text-decoration: none;
     display: block;
+    border-radius: 10px;
+    white-space: nowrap;
 }
 
 /* Change color of dropdown links on hover */
@@ -47,9 +59,11 @@
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
+/* Change Color */
 .dropbtn:hover {
     background-color: var(--theadColor) !important;
     color: white !important;
+    cursor: pointer;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
@@ -57,4 +71,3 @@
     background-color: #ccc;
     color: black;
 }
-

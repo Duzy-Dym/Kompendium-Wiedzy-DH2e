@@ -15,7 +15,6 @@ function includeHTML() {
                     if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
                     /* Remove the attribute, and call this function once more: */
                     elmnt.removeAttribute("w3-include-html");
-                    console.log("Kod dziala?");
                     includeHTML();
                 }
             }
@@ -23,8 +22,6 @@ function includeHTML() {
             xhttp.send();
             /* Exit the function: */
             return;
-        } else {
-            console.log("zjebane");
         }
     }
 }
