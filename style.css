@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    font-family: Verdana,sans-serif;
+    font-size: 1.06em;
+    line-height: 1.5;
+}
+:root {
+    --backgroundColor: #222;
+    --firstColor: #343a40;
+    --secondColor: #3e444a;
+    --tdHoverColor: #787878;
+    --theadColor: #800;
+}
+body{
+    background-color: var(--backgroundColor);
+}
+#navbar{
+    background-color: var(--firstColor);
+    width: 100vw;
+    border-bottom: solid 1px lightgray;
+}
+h2{
+    color: red;
+    padding: 10px;
+}

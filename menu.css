@@ -1,0 +1,60 @@
+:root {
+    --backgroundColor: #222;
+    --firstColor: #343a40;
+    --secondColor: #3e444a;
+    --tdHoverColor: #787878;
+    --theadColor: #800;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: inherit;
+    color: white;
+    padding: 10px;
+    font-size: 0.9em;
+    border: 1px transparent solid;
+    border-radius: 10px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--firstColor);
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px transparent solid;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: var(--theadColor);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropbtn:hover {
+    background-color: var(--theadColor) !important;
+    color: white !important;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #ccc;
+    color: black;
+}
+
